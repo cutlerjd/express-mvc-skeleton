@@ -8,8 +8,8 @@ const session = require('express-session')
 const bodyParser = require('body-parser')
 
 //Basic body parser settings
-router.use(bodyParser.json())
-router.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 
 //Rendering with mustache
 app.engine('mustache', mustacheExpress());
